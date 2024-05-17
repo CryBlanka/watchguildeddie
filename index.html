@@ -19,7 +19,8 @@
     <meta name="twitter:description" content="Discover the beautiful land of femboys where love, diversity, and freedom thrive.">
     <meta name="twitter:image" content="https://github.com/CryBlanka/cryblanka.github.io/blob/main/femboyflag.gif?raw=true">
 </head>
-<body>
+<body onclick="playAudio()">
+    <audio id="background-audio" src="https://github.com/CryBlanka/cryblanka.github.io/raw/main/rizzlerlow.mp3"></audio>
     <table width="800" align="center" cellpadding="10" cellspacing="0" border="1">
         <tr>
             <td bgcolor="#FFD700" align="center">
@@ -38,6 +39,18 @@
                 <p>If you dream of joining us in the beautiful land of Femboys and wish to become a resident of Femboy Land, please contact us at: <a href="mailto:recrutation@femboy.edu.pl">recrutation@femboy.edu.pl</a></p>
             </td>
         </tr>
+        <tr>
+            <td align="center">
+                <p>&copy; 1996 Femboy Land</p>
+            </td>
+        </tr>
     </table>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('background-audio');
+            audio.play();
+        }
+    </script>
 </body>
 </html>
