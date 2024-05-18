@@ -38,7 +38,7 @@ header .logo {
 }
 
 header .gov-text {
-    font-size: 35px;
+    font-size: 24px;
     font-weight: bold;
     color: #fff;
 }
@@ -97,4 +97,28 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+#government-overview {
+    margin-bottom: 20px;
+}
+
+.biography-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bio-image {
+    flex: 0 0 150px;
+    margin-right: 20px;
+}
+
+.bio-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #003366;
+}
+
+.bio-info {
+    flex: 1;
 }
