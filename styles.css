@@ -15,34 +15,55 @@ body {
 header {
     background-color: #003366; /* Dark Blue */
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
-a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
 
-a:hover {
+nav ul li a:hover {
     color: #FF69B4; /* Pink */
 }
 
 main {
     flex: 1;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 h1 {
@@ -63,8 +84,12 @@ p {
 footer {
     background-color: #003366; /* Dark Blue */
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     margin-top: auto;
     width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
