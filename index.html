@@ -6,6 +6,50 @@
     <title>Home | Femland Gov</title>
     <link rel="icon" type="image/x-icon" href="femboyflag.gif">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Additional CSS for image gallery */
+        #image-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery-item img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .image-overlay {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,33 +68,43 @@
             </nav>
         </div>
     </header>
+
     <main>
         <section id="about">
             <h1>Welcome to Femland</h1>
             <h2>The Land of Expression and Freedom</h2>
             <p>Discover the sovereign state of Femland, where love, diversity, and freedom shape our vibrant nation. Picture-perfect landscapes and a rich cultural tapestry await those who explore our borders.</p>
-        </section>
-        <section id="government">
-            <h2>Government Structure</h2>
-            <p>Femland's government is centralized and led by President and Leader Keller Cumstain. He oversees all aspects of governance and leadership.</p>
-            <h2>Legal Framework</h2>
-            <p>Femland is currently in the process of drafting a constitution. However, our commitment to full freedom serves as the cornerstone of our legal framework.</p>
-            <h2>National Symbols</h2>
-            <p>Behold the flag of Femland, featuring pink, light pink, white, light blue, and pink colors. Our anthem, "Rizzler," and the emblem featuring Leader Keller Cumstain in an Asdolfo cosplay embody our national identity.</p>
-            <h2>International Relations</h2>
-            <p>Femland maintains positive relations with Poland, serving as a key diplomatic partner.</p>
-        </section>
-        <section id="citizenship">
-            <h2>Citizenship and Immigration</h2>
-            <p>Femland welcomes individuals from all countries to apply for citizenship. The only requirement is ownership of thigh highs.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Ready to become a citizen of Femland? Reach out to us at <a href="mailto:recruitment@femboy.edu.pl">recruitment@femboy.edu.pl</a> to start your journey into our illustrious nation.</p>
+            
+            <!-- Image Gallery -->
+            <div id="image-gallery">
+                <div class="gallery-item">
+                    <img src="image1.png" alt="Image 1">
+                    <div class="image-overlay">We are the land of femboys</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image2.png" alt="Image 2">
+                    <div class="image-overlay">Insert Text Here</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image3.png" alt="Image 3">
+                    <div class="image-overlay">Insert Text Here</div>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Nation of Femland - A Division of <a href="https://blanka.lol">blanka.lol</a></p>
     </footer>
+
+    <script>
+        // JavaScript for image gallery (optional)
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Add any functionality you want here
+            });
+        });
+    </script>
 </body>
 </html>
