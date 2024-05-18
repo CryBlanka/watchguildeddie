@@ -6,50 +6,6 @@
     <title>Home | Femland Gov</title>
     <link rel="icon" type="image/x-icon" href="femboyflag.gif">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-        /* Additional CSS for image gallery */
-        #image-gallery {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
-        }
-        
-        .gallery-item {
-            position: relative;
-            margin: 0 10px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.1);
-        }
-
-        .gallery-item img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .image-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .gallery-item:hover .image-overlay {
-            opacity: 1;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -74,37 +30,11 @@
             <h1>Welcome to Femland</h1>
             <h2>The Land of Expression and Freedom</h2>
             <p>Discover the sovereign state of Femland, where love, diversity, and freedom shape our vibrant nation. Picture-perfect landscapes and a rich cultural tapestry await those who explore our borders.</p>
-            
-            <!-- Image Gallery -->
-            <div id="image-gallery">
-                <div class="gallery-item">
-                    <img src="image1.png" alt="Image 1">
-                    <div class="image-overlay">We are the land of femboys</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="image2.png" alt="Image 2">
-                    <div class="image-overlay">Insert Text Here</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="image3.png" alt="Image 3">
-                    <div class="image-overlay">Insert Text Here</div>
-                </div>
-            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Nation of Femland - A Division of <a href="https://blanka.lol">blanka.lol</a></p>
     </footer>
-
-    <script>
-        // JavaScript for image gallery (optional)
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                // Add any functionality you want here
-            });
-        });
-    </script>
 </body>
 </html>
