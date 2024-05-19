@@ -129,6 +129,98 @@ footer a:hover {
     border: 1px solid #003366;
 }
 
+#hero {
+    background: url('https://example.com/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Introduction Section */
+#introduction {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#introduction .intro-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#introduction .intro-images img {
+    max-width: 45%;
+    border-radius: 10px;
+}
+
+/* Leadership Section */
+#leadership {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#leadership .leader {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+#leadership .leader img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#leadership .leader h3 {
+    margin-top: 10px;
+}
+
+/* Explore Section */
+#explore {
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+#explore .explore-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#explore .explore-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#explore .explore-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#explore .explore-item h3 {
+    margin-top: 10px;
+}
+
+#explore .explore-item p {
+    margin-top: 10px;
+}
+
 .bio-info {
     flex: 1;
 }
