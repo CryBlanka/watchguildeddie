@@ -1,0 +1,25 @@
+Update to Guilded login requirements
+Beginning July 15 2024, all Guilded accounts will require a Roblox account connection in order to maintain access to Guilded’s services. Email login will no longer be supported. Starting today, all new Guilded accounts will require a Roblox account.
+What's changing & why
+Guilded’s mission is to build the best communication platform for your communities. In pursuit of this, we’re taking steps toward more deeply integrating with the Roblox platform. By connecting Guilded and Roblox accounts, we’re able to lay a foundation that will allow us to serve Guilded’s current users with more robust infrastructure and access to new capabilities – from improved spam and raid prevention, to advanced localization tools, and more – while also introducing new opportunities for Roblox communities to engage and grow on Guilded.
+We’re excited about the amazing opportunities this connection will help us unlock, but we understand that this may be inconvenient for our users who have not yet connected or created a Roblox account. For this reason, we’re giving users until July 15 to claim their Guilded account with a Roblox account before this change goes into effect.
+What this means for current users
+Until July 15, users who created their accounts before May 30 can continue to access their Guilded account with their email and password login credentials. Users that do not already have a Roblox account linked to their Guilded account will receive a notice for steps on connecting their accounts. Users who do not have a Roblox account can create one in the Roblox OAuth modal during the connection process. For users who have already connected a Roblox account to their Guilded account, no further action is required.
+Once a Roblox account is connected to a Guilded account, the Roblox OAuth option will be adopted as the primary method for accessing the account. Beginning July 15, email login will no longer be supported for all accounts.
+Users who do not claim their Guilded accounts with a Roblox account before July 15 will no longer be able to log into their Guilded account using their email and password. Instructions to claim an unclaimed account will be available on the Guilded login screen beginning July 15. Users may also contact Guilded Support for assistance claiming their accounts.
+What this means for new users
+Beginning today, all new Guilded accounts will require a Roblox account at the time of signup, and account creation using email and password is no longer supported. For new users, no further action is required.
+Thank you
+Connecting Guilded and Roblox accounts lays a foundation that will help us to better serve and grow our communities today, as well as reach new audiences around the world. We understand that this process may be inconvenient for some of our users, but we’re committed to making this a smooth transition for everyone.
+As a thank you for joining us on this journey, any users being asked to claim an existing Guilded account will receive our exclusive Gil by Guilded Avatar bundle — perfect for representing the community you've helped build.
+
+
+FAQ
+Q — Will Guilded no longer be supporting communities that are not focused on Roblox?
+A — Guilded’s mission remains the same: to build the best communication platform for you and your communities. Guilded will continue to serve gamers, developers, content creators, and interest groups of all stripes.
+Q: Can I opt out of connecting a Roblox account to my Guilded account?
+A — A Roblox account will be required in order to access your Guilded account beginning July 15. If you choose not to connect with Roblox, you will no longer be able to log in and access your account. However, you can restore access if you choose to connect and claim at a later date.
+Q — What happens if I cannot access my Roblox account?
+A — Access to your Roblox account will be required in order to log into your Guilded account. If you experience issues accessing your Roblox account, please refer to this Roblox Help Center section.
+Q — How will this affect the 2FA I have on my Guilded account?
+A — If you have 2FA enabled on your Guilded account, you will be prompted to enter an authentication code in order to connect your Roblox account. Completing this step will disable the 2FA on your Guilded account, and Guilded will defer to your Roblox account security settings. Guilded 2FA will no longer be supported. For more information on Roblox 2-Step Verification, please visit this Roblox Help Center article.
