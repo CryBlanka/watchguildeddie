@@ -1,85 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Femland Gov</title>
-    <link rel="icon" type="image/x-icon" href="femboyflag.gif">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch Guilded Die</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  #countdown {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <img src="femboyflag.gif" alt="Femland Logo" class="logo">
-                <a class="gov-text" href="/">gov.fem</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/government">Government</a></li>
-                    <li><a href="/citizenship">Citizenship</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Welcome to Femland</h1>
-                <h2>The Land of Expression and Freedom</h2>
-                <p>Discover the sovereign state of Femland, where love, diversity, and freedom shape our vibrant nation. Picture-perfect landscapes and a rich cultural tapestry await those who explore our borders.</p>
-            </div>
-        </section>
-        <section id="introduction">
-            <h2>About Femland</h2>
-            <p>Femland is a unique and sovereign state known for its commitment to personal freedom, diversity, and cultural expression. Founded by the legendary Keller Cumstain, Femland stands as a beacon of hope and unity for all who seek a place where they can truly be themselves.</p>
-            <div class="intro-images">
-                <img src="femland-on-a-map.png" alt="Femland Location">
-            </div>
-        </section>
-        <section id="leadership">
-            <h2>Our Leadership</h2>
-            <div class="leader">
-                <img src="https://i.redd.it/tdie2idr7fmb1.png" alt="Keller Cumstain">
-                <h3>Keller Cumstain</h3>
-                <p>All-mighty Leader of Femland</p>
-            </div>
-            <div class="leader">
-                <img src="https://pbs.twimg.com/media/GKIZqALXIAAHOMG?format=jpg&name=small" alt="Yusuf Abdullahi">
-                <h3>Yusuf Abdullahi</h3>
-                <p>Prime Fem-Minister</p>
-            </div>
-            <div class="leader">
-                <img src="https://preview.redd.it/best-yxl-salah-pictures-v0-a56a7jkpjnxb1.jpg?width=314&format=pjpg&auto=webp&s=9708f80bfc25f2e6ae8808bc87cc181f3a7c8de5" alt="Crash Out Salah Meat">
-                <h3>Crash Out Salah Meat</h3>
-                <p>Minister of Sexual Relations</p>
-            </div>
-        </section>
-        <section id="explore">
-            <h2>Explore Femland</h2>
-            <p>Femland offers a variety of experiences for residents and visitors alike. From stunning natural landscapes to vibrant cultural festivals, there's always something exciting happening in Femland.</p>
-            <div class="explore-content">
-                <div class="explore-item">
-                    <h3>Natural Beauty</h3>
-                    <p>Experience the breathtaking landscapes and natural beauty of Femland, from serene beaches to lush forests.</p>
-                </div>
-                <div class="explore-item">
-                    <h3>Cultural Festivals</h3>
-                    <p>Join in the celebration of Femland's diverse culture through its many festivals and cultural events.</p>
-                </div>
-                <div class="explore-item">
-                    <h3>Rich History</h3>
-                    <p>Learn about Femland's rich history and the journey to becoming a land of freedom and expression.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+<h1>Guilded will die in</h1>
+<div id="countdown"></div>
 
-    <footer>
-        <p>&copy; 2024 Nation of Femland - A Division of <a href="https://blanka.lol">blanka.lol</a></p>
-    </footer>
+<script>
+  // Function to calculate the time remaining until a specific date
+  function calculateCountdown(endDate) {
+    let currentDate = new Date();
+    let difference = endDate - currentDate;
+
+    let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    return {
+      'total': difference,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+
+  // Function to display the countdown
+  function displayCountdown() {
+    let endDate = new Date("July 15, 2024 00:00:00").getTime();
+
+    let countdown = calculateCountdown(endDate);
+
+    document.getElementById('countdown').innerHTML = `
+      <div>${countdown.days} days</div>
+      <div>${countdown.hours} hours</div>
+      <div>${countdown.minutes} minutes</div>
+      <div>${countdown.seconds} seconds</div>
+    `;
+
+    // Update the countdown every second
+    setInterval(function() {
+      countdown = calculateCountdown(endDate);
+      document.getElementById('countdown').innerHTML = `
+        <div>${countdown.days} days</div>
+        <div>${countdown.hours} hours</div>
+        <div>${countdown.minutes} minutes</div>
+        <div>${countdown.seconds} seconds</div>
+      `;
+    }, 1000);
+  }
+
+  // Display the countdown when the page loads
+  displayCountdown();
+</script>
+
 </body>
 </html>
