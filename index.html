@@ -24,6 +24,13 @@
     height: 100vh;
     flex-direction: column;
   }
+  .container {
+    background-color: #36393F;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
   h1 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -37,27 +44,23 @@
   #countdown div {
     margin: 0 10px;
   }
-  #update-content {
-    width: 80%;
-    max-height: 500px;
-    overflow-y: auto;
-    padding: 20px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
   #summary {
-    margin-top: 20px;
     text-align: center;
+  }
+  p {
+    margin: 0;
+    color: #ddd;
   }
 </style>
 </head>
 <body>
 
-<h1>Watch Guilded Die</h1>
-<div id="countdown"></div>
+<div class="container">
+  <h1>Watch Guilded Die</h1>
+  <div id="countdown"></div>
+</div>
 
-<div id="summary">
+<div class="container" id="summary">
   <p>
     As some of you may have heard, Roblox is going to enforce their connection method as the only way to log in, replacing the previously normal login method without the use of Roblox’s OAuth system. This change is concerning for many people who use this platform, as they will now be required to link a Roblox account in order to access Guilded. Previously, users had the option to log in with Roblox or simply use a password.
     Guilded has set a deadline of July 15th, 2024, to implement this update, and we simply don’t want this change.
