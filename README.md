@@ -10,6 +10,7 @@ Example format:
 {
   "username": "Blanka",
   "discordusername": "cryblanka",
+  "quote": "gil noooooo",
   "rank": ["BD"]
 }
 
