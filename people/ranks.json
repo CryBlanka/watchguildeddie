@@ -13,6 +13,11 @@
       "code": "BD",
       "name": "Bot Developer",
       "image": "https://watch-guilded-die.lol/people/flairs/botdev.png"
+    },
+    {
+      "code": "WGD",
+      "name": "Watch Guilded Die Dev",
+      "image": "https://watch-guilded-die.lol/people/flairs/sitedev.png"
     }
   ]
   
