@@ -132,18 +132,27 @@
         .then(data => {
           const supportersContainer = document.getElementById('supporters');
 
-          data.people.forEach(person => {
+          data.forEach(person => {
             const supporterBox = document.createElement('div');
             supporterBox.classList.add('supporter-box');
 
             const supporterName = document.createElement('h4');
-            supporterName.textContent = person.name;
+            supporterName.textContent = person.username;
 
-            const supporterLocation = document.createElement('p');
-            supporterLocation.textContent = person.location;
+            const supporterMessage = document.createElement('p');
+            supporterMessage.textContent = person.message;
+
+            const supporterRank = document.createElement('p');
+            supporterRank.textContent = "Rank: " + person.rank.join(", ");
+
+            const supporterLink = document.createElement('a');
+            supporterLink.textContent = "Visit Profile";
+            supporterLink.href = person.link;
 
             supporterBox.appendChild(supporterName);
-            supporterBox.appendChild(supporterLocation);
+            supporterBox.appendChild(supporterMessage);
+            supporterBox.appendChild(supporterRank);
+            supporterBox.appendChild(supporterLink);
             supportersContainer.appendChild(supporterBox);
           });
         })
