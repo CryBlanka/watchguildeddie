@@ -9,9 +9,8 @@ Example format:
 
 {
   "username": "Blanka",
-  "message": "Sad to see Guilded go.",
-  "rank": ["BD"],
-  "link": "https://blanka.lol"
+  "discordusername": "cryblanka",
+  "rank": ["BD"]
 }
 
 ```
