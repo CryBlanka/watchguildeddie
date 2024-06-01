@@ -2,7 +2,7 @@
 
 ![Watching Guilded Die...](https://watch-guilded-die.lol/favicon.png)
 
-To add your message which will be visible on Watch Guilded Die add yourself to https://github.com/CryBlanka/cryblanka.github.io/blob/main/people/people.json and commit a push request.
+To add your message which will be visible on Watch Guilded Die add yourself to **/people/people.json** and commit a push request.
 Example format:
 ```json
 
