@@ -69,6 +69,27 @@
  .tag #killed {
      color: red;
 }
+.supporter-box {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: calc(25% - 20px);
+  margin-right: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.supporter-box:nth-child(4n) {
+  margin-right: 0;
+}
+.supporter-box h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.supporter-box p {
+  margin: 0;
+}
  #summary {
      text-align: center;
      line-height: 1.6;
