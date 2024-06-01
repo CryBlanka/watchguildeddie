@@ -125,8 +125,34 @@
       updateCountdown();
       setInterval(updateCountdown, 1);
     }
+
+    function loadSupporters() {
+      fetch('https://watch-guilded-die.lol/people/people.json')
+        .then(response => response.json())
+        .then(data => {
+          const supportersContainer = document.getElementById('supporters');
+
+          data.people.forEach(person => {
+            const supporterBox = document.createElement('div');
+            supporterBox.classList.add('supporter-box');
+
+            const supporterName = document.createElement('h4');
+            supporterName.textContent = person.name;
+
+            const supporterLocation = document.createElement('p');
+            supporterLocation.textContent = person.location;
+
+            supporterBox.appendChild(supporterName);
+            supporterBox.appendChild(supporterLocation);
+            supportersContainer.appendChild(supporterBox);
+          });
+        })
+        .catch(error => console.error('Error loading supporters:', error));
+    }
+
   
     displayCountdown();
+    loadSupporters()
   </script>
   
   </body>
