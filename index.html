@@ -137,7 +137,7 @@
             supporterBox.classList.add('supporter-box');
 
             const supporterName = document.createElement('h4');
-            supporterName.textContent = person.username;
+            supporterName.textContent = person.username + " (" + person.discordusername + ")";
 
             const supporterMessage = document.createElement('p');
             supporterMessage.textContent = person.message;
@@ -145,9 +145,13 @@
             const supporterRank = document.createElement('p');
             supporterRank.textContent = "Rank: " + person.rank.join(", ");
 
-            const supporterLink = document.createElement('a');
-            supporterLink.textContent = "Visit Profile";
-            supporterLink.href = person.link;
+            if (person.site) {
+              const supporterLink = document.createElement('a');
+              supporterLink.textContent = "Visit Site";
+              supporterLink.href = person.site;
+
+              supporterBox.appendChild(supporterLink);
+            }
 
             supporterBox.appendChild(supporterName);
             supporterBox.appendChild(supporterMessage);
