@@ -75,10 +75,14 @@
   </div>
 
   <div class="container" id="supporters">
-    <h3>People Against This Change</h3>
-    <p>
-      You can add yourself by joining the discussion on GilCord, and adding your quote in <b>#standing-against-the-change</b>.
-    </p>
+    <div class="supportersHeader">
+      <h3>People Against This Change</h3>
+      <p>
+        You can add yourself by joining the discussion on GilCord, and adding your quote in <b>#standing-against-the-change</b>.
+      </p>
+    </div>
+
+    <div id="supportersDiv"></div>
   </div>
 
   <div class="container" id="ownership">
@@ -133,11 +137,14 @@
           fetch('https://watch-guilded-die.lol/people/people.json')
             .then(response => response.json())
             .then(data => {
-              const supportersContainer = document.getElementById('supporters');
+              const supportersContainer = document.getElementById('supportersDiv');
 
               data.forEach(person => {
                 const supporterBox = document.createElement('div');
                 supporterBox.classList.add('supporter-box');
+
+                const supporterHeader = document.createElement('div');
+                supporterHeader.classList.add('supporter-header')
 
                 const supporterName = document.createElement('b');
                 supporterName.textContent = person.username + " (" + person.discordusername + ")";
@@ -145,21 +152,25 @@
                 const supporterMessage = document.createElement('p');
                 supporterMessage.textContent = person.quote;
                   
-                const supporterRank = document.createElement('p');
-              
-                const rankData = ranksData.find(rank => rank.code === person.rank[0]);
-                if (rankData) {
-                  const rankIcon = document.createElement('img');
-                  rankIcon.src = rankData.image;
-                  rankIcon.alt = rankData.name;
-                  rankIcon.title = rankData.name;
-                  rankIcon.style.width = '20px';
-                  rankIcon.style.height = '20px';
-                  supporterRank.appendChild(rankIcon);
-                }
+                const supporterRanks = document.createElement('div');
+                supporterRanks.classList.add('supporter-ranks');
 
-                supporterBox.appendChild(supporterName);
-                supporterBox.appendChild(supporterRank);
+                person.rank.forEach(personRank => {
+                  const rankData = ranksData.find(rank => rank.code === personRank);
+                  if (rankData) {
+                    const rankIcon = document.createElement('img');
+                    rankIcon.src = rankData.image;
+                    rankIcon.alt = rankData.name;
+                    rankIcon.title = rankData.name;
+                    rankIcon.style.width = '20px';
+                    rankIcon.style.height = '20px';
+                    supporterRanks.appendChild(rankIcon);
+                  }
+                })
+
+                supporterHeader.appendChild(supporterName);
+                supporterHeader.appendChild(supporterRanks);
+                supporterBox.appendChild(supporterHeader)
                 supporterBox.appendChild(supporterMessage);
               
                 supportersContainer.appendChild(supporterBox);

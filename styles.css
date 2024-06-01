@@ -74,38 +74,44 @@
   color: #fff;
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 20px;
-  width: calc(25% - 20px);
-  margin-right: 20px;
   box-sizing: border-box;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.supporter-box:nth-child(4n) {
-  margin-right: 0;
+.supporter-header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-content: center;
 }
-.supporter-box h4 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.supporter-box p {
-  margin: 0;
-}
- #summary {
-     text-align: center;
-     line-height: 1.6;
+.supporter-ranks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
  #supporters {
      text-align: center;
      line-height: 1.6;
+     max-width: 100% !important;
 }
  #supporters b {
      color: #F5C400;
 }
+ .supportersHeader {
+   padding-bottom: 20px;
+ }
  #supporters a {
      text-decoration: none;
      font-weight: bold;
      color: #FFFFFF;
 }
+ #supportersDiv {
+   display: grid;
+   gap: 20px;
+   grid-template-columns: auto auto auto auto;
+ }
  #ownership {
      text-align: center;
      line-height: 1.6;
