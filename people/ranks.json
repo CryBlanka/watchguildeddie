@@ -1,0 +1,18 @@
+[
+    {
+      "code": "GPartner",
+      "name": "Guilded Partner",
+      "image": "https://example.com/gpartner.png"
+    },
+    {
+      "code": "GG",
+      "name": "Gil Gang",
+      "image": "https://example.com/gg.png"
+    },
+    {
+      "code": "BD",
+      "name": "Bot Developer",
+      "image": "https://example.com/bot_developer.png"
+    }
+  ]
+  
