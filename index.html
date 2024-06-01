@@ -145,6 +145,10 @@
             const supporterRank = document.createElement('p');
             supporterRank.textContent = "Rank: " + person.rank.join(", ");
 
+            supporterBox.appendChild(supporterName);
+            supporterBox.appendChild(supporterMessage);
+            supporterBox.appendChild(supporterRank);
+              
             if (person.link) {
               const supporterLink = document.createElement('a');
               supporterLink.textContent = "Visit Site";
@@ -152,10 +156,7 @@
 
               supporterBox.appendChild(supporterLink);
             }
-
-            supporterBox.appendChild(supporterName);
-            supporterBox.appendChild(supporterMessage);
-            supporterBox.appendChild(supporterRank);
+              
             supportersContainer.appendChild(supporterBox);
           });
         })
