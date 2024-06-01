@@ -136,8 +136,8 @@
             const supporterBox = document.createElement('div');
             supporterBox.classList.add('supporter-box');
 
-            const supporterName = document.createElement('h4');
-            supporterName.textContent = "<b>" + person.username + " (" + person.discordusername + ")</b>";
+            const supporterName = document.createElement('b');
+            supporterName.textContent = person.username + " (" + person.discordusername + ")";
 
             const supporterMessage = document.createElement('p');
             supporterMessage.textContent = person.message;
