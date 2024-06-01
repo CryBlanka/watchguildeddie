@@ -1,178 +1,198 @@
- body {
-     font-family: Arial, sans-serif;
-     background-color: #202225;
-     color: #fff;
-     margin: 0;
-     padding: 20px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     min-height: 100vh;
-     flex-direction: column;
-     overflow-y: auto;
+body {
+	font-family: Arial, sans-serif;
+	background-color: #202225;
+	color: #fff;
+	margin: 0;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	overflow-y: auto;
 }
- .container {
-     background-color: #36393F;
-     width: 80%;
-     max-width: 800px;
-     padding: 20px;
-     border-radius: 10px;
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-     margin-bottom: 20px;
+.container {
+	background-color: #36393f;
+	width: 80%;
+	max-width: 800px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
 }
- h1 {
-     font-size: 36px;
-     margin-bottom: 20px;
-     text-align: center;
-     color: #F5C400;
+h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #f5c400;
 }
- h3 {
-     font-size: 25px;
-     margin-bottom: 0px;
-     margin-top: 0px;
-     text-align: center;
-     color: #F5C400;
+h3 {
+	font-size: 25px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align: center;
+	color: #f5c400;
 }
- #countdown {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     margin-bottom: 20px;
-     flex-wrap: wrap;
+#countdown {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
 }
- .time-box {
-     text-align: center;
-     width: 120px;
-     margin: 10px;
+.time-box {
+	text-align: center;
+	width: 120px;
+	margin: 10px;
 }
- .time {
-     font-size: 48px;
-     background-color: #202225;
-     padding: 10px;
-     border-radius: 5px;
-     margin-bottom: 5px;
-     width: 100%;
-     box-sizing: border-box;
+.time {
+	font-size: 48px;
+	background-color: #202225;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+	box-sizing: border-box;
 }
- .label {
-     font-size: 18px;
-     color: #F5C400;
+.label {
+	font-size: 18px;
+	color: #f5c400;
 }
- .tag {
-     background-color: #202225;
-     color: #F5C400;
-     font-size: 12px;
-     padding: 4px 8px;
-     border-radius: 4px;
-     margin-left: 5px;
+.tag {
+	background-color: #202225;
+	color: #f5c400;
+	font-size: 12px;
+	padding: 4px 8px;
+	border-radius: 4px;
+	margin-left: 5px;
 }
- .tag #killed {
-     color: red;
+.tag #killed {
+	color: red;
 }
 .supporter-box {
-  background-color: #202225;
-  color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	background-color: #202225;
+	color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .supporter-header {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  align-content: center;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	align-content: center;
 }
 .supporter-ranks {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
 }
- #supporters {
-     text-align: center;
-     line-height: 1.6;
-     max-width: 100% !important;
+#supporters {
+	text-align: center;
+	line-height: 1.6;
+	max-width: 100% !important;
 }
- #supporters b {
-     color: #F5C400;
+#supporters b {
+	color: #f5c400;
 }
- .supportersHeader {
-   padding-bottom: 20px;
- }
- #supporters a {
-     text-decoration: none;
-     font-weight: bold;
-     color: #FFFFFF;
+.supportersHeader {
+	padding-bottom: 20px;
 }
- #supportersDiv {
-   display: grid;
-   gap: 20px;
-   grid-template-columns: auto auto auto auto;
- }
- #ownership {
-     text-align: center;
-     line-height: 1.6;
+#supporters a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
 }
- #ownership b {
-     color: #F5C400;
+
+#supportersDiv {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: auto auto auto auto;
 }
- #thingstodo {
-     text-align: center;
-     line-height: 1.6;
+
+@media (max-width: 1200px) {
+	#supportersDiv {
+		grid-template-columns: auto auto auto;
+	}
 }
- #thingstodo a {
-     text-decoration: none;
-     font-weight: bold;
-     color: #FFFFFF;
+
+@media (max-width: 925px) {
+	#supportersDiv {
+		grid-template-columns: auto auto;
+	}
 }
- #thingstodo img {
-     max-width: 90%;
-     max-height: 90%;
-     display: block;
-     margin: 0 auto;
-     margin-top: 15px;
+
+@media (max-width: 655px) {
+	#supportersDiv {
+		grid-template-columns: auto;
+	}
 }
- #thingstodo .killed {
-     color:red;
-     text-decoration:line-through;
+
+#ownership {
+	text-align: center;
+	line-height: 1.6;
 }
- #ownership a {
-     text-decoration: none;
-     font-weight: bold;
-     color: #FFFFFF;
+#ownership b {
+	color: #f5c400;
 }
- p {
-     margin: 0;
-     color: #ddd;
+#thingstodo {
+	text-align: center;
+	line-height: 1.6;
 }
- @media (max-width: 600px) {
-     .container {
-         width: 90%;
-         padding: 15px;
-    }
-     h1 {
-         font-size: 28px;
-    }
-     #countdown {
-         flex-direction: column;
-    }
-     .time {
-         font-size: 36px;
-    }
+#thingstodo a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
 }
- ::-webkit-scrollbar {
-     width: 8px;
+#thingstodo img {
+	max-width: 90%;
+	max-height: 90%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
 }
- ::-webkit-scrollbar-track {
-     background: #202225;
+#thingstodo .killed {
+	color: red;
+	text-decoration: line-through;
 }
- ::-webkit-scrollbar-thumb {
-     background: #888;
-     border-radius: 4px;
+#ownership a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
 }
- ::-webkit-scrollbar-thumb:hover {
-     background: #555;
+p {
+	margin: 0;
+	color: #ddd;
+}
+@media (max-width: 600px) {
+	.container {
+		width: 90%;
+		padding: 15px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	#countdown {
+		flex-direction: column;
+	}
+	.time {
+		font-size: 36px;
+	}
+}
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: #202225;
+}
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
