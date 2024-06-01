@@ -142,6 +142,9 @@
                 const supporterName = document.createElement('b');
                 supporterName.textContent = person.username + " (" + person.discordusername + ")";
 
+                const supporterMessage = document.createElement('p');
+                supporterMessage.textContent = person.quote;
+                  
                 const supporterRank = document.createElement('p');
               
                 const rankData = ranksData.find(rank => rank.code === person.rank[0]);
@@ -157,6 +160,7 @@
 
                 supporterBox.appendChild(supporterName);
                 supporterBox.appendChild(supporterRank);
+                supporterBox.appendChild(supporterMessage);
               
                 supportersContainer.appendChild(supporterBox);
               });
