@@ -186,7 +186,7 @@ b {
 	display: block;
 	margin: 0 auto;
 	margin-top: 15px;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 #thingstodo .killed {
 	color: red;
