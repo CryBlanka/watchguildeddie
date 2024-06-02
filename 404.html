@@ -22,6 +22,7 @@
     <p>
       Well I guess the page that you were looking for is non-existent just like Guilded's email login.
     </p>
+    <button class="gil-button" onclick="redirectToLink('/')">Home</button>
   </div>
 
   <div class="container" id="ownership">
@@ -31,6 +32,16 @@
       Courtesy of <a href="https://blanka.lol">blanka.lol</a>
     </p>
   </div>
+
+  <script>
+    function redirectToLink(url) {
+      if (url) {
+      window.location.href = url;
+    } else {
+      window.location.href = '/list';
+    }
+  }
+  </script>
 
   </body>
   </html>
