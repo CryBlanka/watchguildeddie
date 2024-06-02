@@ -124,7 +124,7 @@ b {
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
-  
+
 .gil-button:hover {
   background-color: #edd65a;
 }
@@ -140,7 +140,6 @@ b {
     transform: scale(1);
   }
 }
-  
 .gil-button:hover {
   animation: gilButtonHover 0.5s ease;
 }
@@ -187,6 +186,7 @@ b {
 	display: block;
 	margin: 0 auto;
 	margin-top: 15px;
+	border-radius: 5px;
 }
 #thingstodo .killed {
 	color: red;
