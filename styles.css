@@ -114,7 +114,36 @@ h3 {
 	font-weight: bold;
 	color: #ffffff;
 }
+.gil-button {
+  background-color: #e7c316;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+  
+.gil-button:hover {
+  background-color: #edd65a;
+}
 
+@keyframes gilButtonHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  
+.gil-button:hover {
+  animation: gilButtonHover 0.5s ease;
+}
 #supportersDiv {
 	display: grid;
 	gap: 20px;
