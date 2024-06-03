@@ -32,9 +32,17 @@
     <p style="text-align: left !important;">If you wish too appeal, too bad we're unresponsive as fuck.</p>
     <br>
     <div style="text-align: center;">
-        <button class="gil-button">Logout</button>
+        <button class="gil-button" onclick="redirectToLink('/')">Logout</button>
     </div>
   </div>
+
+  <style>
+    function redirectToLink(url) {
+     if (url) {
+       window.location.href = url;
+     }
+    } 
+  </style>
 
   </body>
   </html>
