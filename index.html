@@ -45,7 +45,7 @@
   </div>
 
   <div class="container" id="summary">
-    <h3>What's Happening To Guilded?</h3>
+    <h2>What's Happening To Guilded?</h2><br>
     <p>
       As some of you may have heard, Roblox is going to enforce their connection method as the only way to log in, replacing the previously normal login method without the use of Roblox’s OAuth system. This change is concerning for many people who use this platform, as they will now be required to link a Roblox account in order to access Guilded. Previously, users had the option to log in with Roblox or simply use a password.
       Guilded has set a deadline of July 15th, 2024, to implement this update, and we simply don’t want this change.
@@ -64,21 +64,23 @@
     <br>
   </div>
 
-  <div class="container" id="thingstodo">
-    <h3>Sign The Petition!</h3><a href="https://www.change.org/p/guilded-linking-account-update">change.org/p/guilded-linking-account-update
+  <div class="container" id="things-to-do">
+    <h2>Sign The Petition!</h2><a href="https://www.change.org/p/guilded-linking-account-update">change.org/p/guilded-linking-account-update
       <img src="petition.jpg"></img>
     </a>
     <br>
-    <h3>Killed community-made projects.</h3>
+    <h2>Killed community-made projects.</h2>
     <p>List of projects and servers which shut down or are about to shut down.</p>
-    <button class="gil-button" onclick="redirectToServers()">Here</button>
-    <h3>Login to Watch Guilded Die using Roblox</h3>
+      <br>
+    <button class="gil-button" onclick="redirectToServers()">Learn more</button>
+    <br><br>
+    <h3>Login to Watch Guilded Die using Roblox</h3><br>
     <button class="rbx-button" onclick="redirectToLink('https://authorize.roblox.com/?client_id=4008576085360179151&response_type=code&redirect_uri=https%3A%2F%2Fwatch-guilded-die.lol%2Fnot-approved&scope=openid+profile&step=accountConfirm')">
       <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png" alt="Roblox Logo" style="width:20px;height:30px;margin-bottom:14px;">
       Login with Roblox
     </button>
     <br>
-    <h3>Migrate Away From Guilded.</h3>
+    <h2>Migrate Away From Guilded.</h2>
     <p><b>Guilded -> Discord bot! </b><a href="https://www.guilded.gg/b/259b56ad-6868-49fb-ac7d-7a1e473a7a26">Guilded Bot Link</a><br>
 This bot exports your Guilded server into Discord, keeping your roles, channels, and permissions as well as it can. It will convert Guilded permissions to Discord, and attempt to keep as much of your Guilded server intact as possible.<br>Simply run ex!help after inviting the Guilded bot!</p>
     <br>
@@ -102,8 +104,13 @@ This bot exports your Guilded server into Discord, keeping your roles, channels,
         You can add yourself by joining the discussion on GilCord, and adding your quote in <b>#standing-against-the-change</b>.
       </p>
     </div>
-
-    <div id="supportersDiv"></div>
+      <div id="supportersDivWrapper">
+          <div class="free-scrolling-disabled" id="supportersDiv"></div>
+      </div>
+      <div id="scrollOptionsContainer">
+          <button class="gil-button" id="toggleScrollingBtn" onclick="toggleScrolling()">Pause scrolling</button>
+          <button class="gil-button" onclick="resetScrollAmount()">Reset</button>
+      </div>
   </div>
 
   <div class="container" id="ownership">
@@ -209,11 +216,56 @@ This bot exports your Guilded server into Discord, keeping your roles, channels,
      if (url) {
        window.location.href = url;
      }
-   } 
+   }
 
     displayCountdown();
     window.addEventListener('load', loadSupporters);
   </script>
+
+<script>
+    let isScrollPaused = false;
+    let xScrollAmount = 0;
+    let yScrollAmount = 0;
+    let default_increment = 1;
+    let default_decrement = -1;
+    let xdirection = default_increment;
+    let ydirection = default_decrement;
+    const supportersDiv = document.getElementById('supportersDiv');
+    window.onload = function() {
+        function step() {
+            if (!isScrollPaused) {
+                supportersDiv.scrollTo(xScrollAmount += xdirection, yScrollAmount +=ydirection);
+                if (xScrollAmount > (supportersDiv.scrollWidth - supportersDiv.offsetWidth) && xdirection === default_increment) xdirection = default_decrement;
+                if (xScrollAmount < 0 && xdirection === default_decrement) xdirection = default_increment;
+                if (yScrollAmount > (supportersDiv.scrollHeight - supportersDiv.offsetHeight) && ydirection === default_increment) ydirection = default_decrement;
+                if (yScrollAmount < 0 && ydirection === default_decrement) ydirection = default_increment;
+            }
+            window.requestAnimationFrame(step);
+        }
+        window.requestAnimationFrame(step);
+    }
+
+    function toggleScrolling() {
+        isScrollPaused = !isScrollPaused;
+        const btn = document.getElementById("toggleScrollingBtn");
+        btn.innerText = isScrollPaused ? "Unpause scrolling" : "Pause scrolling";
+        if (isScrollPaused) {
+            supportersDiv.classList.remove("free-scrolling-disabled");
+            supportersDiv.classList.add("free-scrolling-enabled");
+        } else {
+            supportersDiv.classList.remove("free-scrolling-enabled");
+            supportersDiv.classList.add("free-scrolling-disabled");
+            xScrollAmount = supportersDiv.scrollLeft;
+            yScrollAmount = supportersDiv.scrollTop;
+        }
+    }
+
+    function resetScrollAmount() {
+        xScrollAmount = 0; yScrollAmount = 0;
+        supportersDiv.scrollTo(xScrollAmount, yScrollAmount);
+    }
+
+</script>
 
   </body>
   </html>
