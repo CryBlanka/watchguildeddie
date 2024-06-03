@@ -155,6 +155,7 @@ b {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  height: 40px;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
