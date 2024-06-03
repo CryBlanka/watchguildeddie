@@ -27,13 +27,13 @@
       "username": "PrettyGoodName",
       "discordusername": "prettygoodname",
       "quote": "As someone who invested 4 years into Guilded by promoting it, growing my community in it, building bots, becoming a Guilded partner, to see Guilded rejecting me, people I knew, my community, my bots and much of what I love about Guilded is absolutely devastating.",
-      "rank": ["GPartner", "GG"]
+      "rank": ["GPartner", "GG", "BD"]
     },
     {
       "username": "Nathaniel",
       "discordusername": "itznxthaniel",
       "quote": "I am against this change. Guilded needs to listen to it's community.",
-      "rank": ["WGD", "GPartner", "GG"]
+      "rank": ["WGD", "GPartner", "GG", "BD"]
     },
     {
       "username": "Xyphien",
@@ -244,5 +244,41 @@
         "discordusername": "imzunkz",
         "quote": "I'm heavily against this change, though Guilded REFUSES to listen to their community about it. I used to run the /Furry Guild, so much for that now though, nobody should be forced to join Roblox just to be in a community. ",
         "rank": ["GPartner"]
+    },
+    {
+        "username": "Raterix",
+        "discordusername": "raterix",
+        "quote": "What has gone on here is such a terrible thing, because Guilded had the potential to be a hub for all games, everything. Unfortunately, forcing users on Guilded to have a Roblox account, and not allowing you to sign up with an alternative, like an Email or Google account, is extremely limiting. This destroys all functionality when it comes to other games. It's now Roblox exclusive, weither they want to be in denial claiming 'we will still support these games' or not. Requiring a Roblox account alienates everyone but Roblox players. If I were to have a hub for Apex Legends, most of those players won't have a Roblox account and never will. I am now forced to transition the hub for my gaming company, RGL, to somewhere else.",
+        "rank": ["GPartner", "GG"]
+    },
+    {
+        "username": "ThatOneUnoriginal",
+        "discordusername": "t1u",
+        "quote": "As someone who has played Roblox for nearly 11 years, I'm confident in saying that Robloxians don't want Guilded (for the most part.) And I'm also confident in saying that Guilded users dont want Roblox either. Its understandable why the Roblox Corporation would want Robloxians to use Guilded over alternative platforms, but Guilded has been and still is much more then just the Roblox community. Enforcing a Roblox only login system infuriates those who do use the Guilded platform whilst not giving any additional reason for Roblox communities to start using Guilded. If the goal of Guilded is truly to 'build the best communication platform for your communities' then the only right decision would be to revert this change and allow users to continue to login or sign up using an email account. You can still provide incentives for Roblox users to use Guilded without trying to force everyone to use Roblox.",
+        "rank": []
+    },
+    {
+        "username": "Duck Dev",
+        "discordusername": "serverdeveloper",
+        "quote": "We wanted a oauth2 solution, good features on the api and new features on the app itself. Instead, we got the introduction of signing CDN URLs with hilarious limits, buggy app which none's interested to fix and now, mandatory Roblox Login. I joined Guilded because I saw the potential for it to be a good Discord competitor. Now, it's just a shadow of it's former self. This is what happens when a good projects gets bought by a much greater company. They just refuse to listen to community's feedback and stay silent. Roblox just destroyed Guilded and it's whole community. New Roblox users may join the platform now but, we as OGs will no longer be there. Maybe Guilded and hopefully Roblox will understand what they've done, but that is not in the near future. Goodbye Guilded and gg, you ruined it.",
+        "rank": []
+    },
+    {
+        "username": "dorianelevator",
+        "discordusername": "dorianelevator",
+        "quote": "definitely against this, it just sucks, what about all the people who joined guilded to chat and not just for GARBAGEblox ? oh well, they're doomed. guilded is now just a ticking time bomb waiting to explode on july 15th and kill all of its users, which is absolutely horrible, so unless guilded wants to go bankrupt or something and kill their users, they should revert this change.",
+        "rank": []
+    },
+    {
+        "username": "overkill",
+        "discordusername": "overkillspree",
+        "quote": "guilded i am not gonna sugercoat it even tho i have an roblox account, why cant you just let people log in with email lmao",
+        "rank": []
+    },
+    {
+        "username": "kin",
+        "discordusername": "kinnn._01",
+        "quote": "guilded is a platform i once absolutely admired before this change. it genuinely sucks when my admiration for this app is crushed because of a stupid agenda of forcing its beloved community and users to use roblox as a medium to use the platform. i admired the features and the development guilded had to the point i applied for GG and was dedicated to sharing this platform with others, but roblox practically (and literally) destroyed guilded by this change. i don't see myself in the future using this app whatsoever either. if anything, i hope they (guilded) would develop and revert the change.",
+        "rank": []
     }
   ]

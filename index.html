@@ -74,6 +74,12 @@
       <br>
     <button class="gil-button" onclick="redirectToServers()">Learn more</button>
     <br><br>
+    <h3>Login to Watch Guilded Die using Roblox</h3><br>
+    <button class="rbx-button" onclick="redirectToLink('https://authorize.roblox.com/?client_id=4008576085360179151&response_type=code&redirect_uri=https%3A%2F%2Fwatch-guilded-die.lol%2Fnot-approved&scope=openid+profile&step=accountConfirm')">
+      <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png" alt="Roblox Logo" style="width:20px;height:30px;margin-bottom:14px;">
+      Login with Roblox
+    </button>
+    <br>
     <h2>Migrate Away From Guilded.</h2>
     <p><b>Guilded -> Discord bot! </b><a href="https://www.guilded.gg/b/259b56ad-6868-49fb-ac7d-7a1e473a7a26">Guilded Bot Link</a><br>
 This bot exports your Guilded server into Discord, keeping your roles, channels, and permissions as well as it can. It will convert Guilded permissions to Discord, and attempt to keep as much of your Guilded server intact as possible.<br>Simply run ex!help after inviting the Guilded bot!</p>
@@ -205,6 +211,12 @@ This bot exports your Guilded server into Discord, keeping your roles, channels,
     function redirectToServers() {
       window.location.href = '/list';
     }
+
+    function redirectToLink(url) {
+     if (url) {
+       window.location.href = url;
+     }
+   }
 
     displayCountdown();
     window.addEventListener('load', loadSupporters);
