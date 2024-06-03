@@ -72,6 +72,8 @@
     <h3>Killed community-made projects.</h3>
     <p>List of projects and servers which shut down or are about to shut down.</p>
     <button class="gil-button" onclick="redirectToServers()">Here</button>
+    <h3>Ban yourself, see like it will be soon!</h3>
+    <button class="gil-button" onclick="showBanContainer()">Ban myself</button>
     <br>
     <h3>Migrate Away From Guilded.</h3>
     <p><b>Guilded -> Discord bot! </b><a href="https://www.guilded.gg/b/259b56ad-6868-49fb-ac7d-7a1e473a7a26">Guilded Bot Link</a><br>
@@ -107,6 +109,24 @@ This bot exports your Guilded server into Discord, keeping your roles, channels,
       Want to contribute? You can do it <a href="https://github.com/CryBlanka/cryblanka.github.io">here</a>!<br>
       Courtesy of <a href="https://blanka.lol">blanka.lol</a> | For inquires <a href="hello@blanka.lol">hello@blanka.lol</a>
     </p>
+  </div>
+
+  <div id="ban-container" class="container" style="text-align: left !important; max-width: 600px; width: 100%; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); display: none;">
+    <h3 style="text-align: left !important;">Account Deleted</h3>
+    <br>
+    <p style="text-align: left !important;">Our content monitors have determined that your behavior at Guilded has been in violation of our <a href="https://www.youtube.com/watch?v=0dg2Z3x2KuQ">Terms of Use</a>.</p>
+    <br>
+    <p style="text-align: left !important;">Reviewed: <b>07/15/2024 12:00AM</b> (CT)</p>
+    <br>
+    <p style="text-align: left !important;">Moderator Note: <b>Your account has been deleted for not supporting Roblox's decision.</b></p>
+    <br>
+    <p style="text-align: left !important;">Your account has been terminated.</p>
+    <br>
+    <p style="text-align: left !important;">If you wish too appeal, too bad we're unresponsive as fuck.</p>
+    <br>
+    <div style="text-align: center;">
+        <button class="gil-button" onclick="hideBanContainer()">Logout</button>
+    </div>
   </div>
 
   <script>
@@ -198,6 +218,16 @@ This bot exports your Guilded server into Discord, keeping your roles, channels,
     }
     function redirectToServers() {
       window.location.href = '/list';
+    }
+
+    function showBanContainer() {
+      document.getElementById('ban-container').style.display = 'block';
+      document.body.style.filter = 'blur(5px)';
+    }
+
+    function hideBanContainer() {
+      document.getElementById('ban-container').style.display = 'none';
+      document.body.style.filter = 'none';
     }
 
     displayCountdown();
