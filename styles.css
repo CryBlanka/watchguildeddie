@@ -20,6 +20,9 @@ body {
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	margin-bottom: 20px;
 }
+.container a {
+	font-size: 17px;
+}
 h1 {
 	font-size: 36px;
 	margin-bottom: 20px;
@@ -28,15 +31,15 @@ h1 {
 }
 h2 {
 	font-size: 30px;
-	margin-bottom: 0px;
-	margin-top: 0px;
+	margin-bottom: 0;
+	margin-top: 0;
 	text-align: center;
 	color: #f5c400;
 }
 h3 {
 	font-size: 25px;
-	margin-bottom: 0px;
-	margin-top: 0px;
+	margin-bottom: 0;
+	margin-top: 0;
 	text-align: center;
 	color: #f5c400;
 }
@@ -84,14 +87,25 @@ h3 {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
+	height: 600px;
+	min-width: 400px;
 }
+
+
 .supporter-header {
 	display: flex;
 	justify-content: center;
 	gap: 10px;
 	align-content: center;
+	padding-bottom: 24px;
 }
+
+.supporter-box p {
+	overflow-y: auto;
+	word-wrap: break-word;
+}
+
 .supporter-ranks {
 	display: flex;
 	flex-direction: row;
@@ -143,52 +157,115 @@ b {
 .gil-button:hover {
   animation: gilButtonHover 0.5s ease;
 }
+
+#supportersDivWrapper {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
 #supportersDiv {
+	position: relative;
+	display: flex;
+	gap: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+#shutdown-grid {
 	display: grid;
 	gap: 20px;
 	grid-template-columns: auto auto auto auto;
 }
 
+.shutdown-box {
+	background-color: #202225;
+	color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.shutdown-header {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	align-content: center;
+}
+
+.free-scrolling-disabled {
+	overflow-x: hidden;
+}
+
+.free-scrolling-enabled {
+	overflow-x: auto;
+}
+
+#supportersDivWrapper::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset -20px 0 20px -10px rgb(0 0 1 / 50%),
+	inset 20px 0 20px -10px rgb(0 0 1 / 50%);
+	pointer-events: none;
+}
+
 @media (max-width: 1200px) {
 	#supportersDiv {
-		grid-template-columns: auto auto auto;
+		flex-direction: column !important;
+		height: 400px !important;
 	}
 }
 
 @media (max-width: 925px) {
 	#supportersDiv {
-		grid-template-columns: auto auto;
+		flex-direction: column !important;
+		height: 400px !important;
 	}
 }
 
 @media (max-width: 655px) {
 	#supportersDiv {
-		grid-template-columns: auto;
+		flex-direction: column !important;
+		height: 400px !important;
 	}
+}
+
+#scrollOptionsContainer {
+	display: flex;
+	padding-top: 25px;
+	justify-content: flex-end;
+	gap: 8px;
 }
 
 #ownership {
 	text-align: center;
 	line-height: 1.6;
 }
-#thingstodo {
+#things-to-do {
 	text-align: center;
 	line-height: 1.6;
 }
-#thingstodo a {
+#things-to-do a {
 	text-decoration: none;
 	font-weight: bold;
 	color: #ffffff;
 }
-#thingstodo img {
+#things-to-do img {
 	max-width: 90%;
 	max-height: 90%;
 	display: block;
-	margin: 0 auto;
-	margin-top: 15px;
+	margin: 15px auto 0;
 	border-radius: 10px;
 }
-#thingstodo .killed {
+#things-to-do .killed {
 	color: red;
 	text-decoration: line-through;
 }
@@ -219,6 +296,7 @@ p {
 }
 ::-webkit-scrollbar {
 	width: 8px;
+	height: 8px;
 }
 ::-webkit-scrollbar-track {
 	background: #202225;
@@ -230,3 +308,5 @@ p {
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }
+
+
