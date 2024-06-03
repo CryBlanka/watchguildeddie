@@ -259,6 +259,9 @@ b {
 		flex-direction: column !important;
 		height: 400px !important;
 	}
+	#shutdown-grid {
+		grid-template-columns: auto auto auto;
+	}
 }
 
 @media (max-width: 925px) {
@@ -266,12 +269,18 @@ b {
 		flex-direction: column !important;
 		height: 400px !important;
 	}
+	#shutdown-grid {
+		grid-template-columns: auto auto;
+	}
 }
 
 @media (max-width: 655px) {
 	#supportersDiv {
 		flex-direction: column !important;
 		height: 400px !important;
+	}
+	#shutdown-grid {
+		grid-template-columns: auto;
 	}
 }
 
