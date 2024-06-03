@@ -73,7 +73,7 @@
     <p>List of projects and servers which shut down or are about to shut down.</p>
     <button class="gil-button" onclick="redirectToServers()">Here</button>
     <h3>Login to Watch Guilded Die using Roblox</h3>
-    <button class="rbx-button" onclick="showBanContainer()">
+    <button class="rbx-button" onclick="redirectToLink('https://authorize.roblox.com/?client_id=4008576085360179151&response_type=code&redirect_uri=https%3A%2F%2Fwatch-guilded-die.lol%2Fnot-approved&scope=openid+profile&step=accountConfirm')">
       <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png" alt="Roblox Logo" style="width:20px;height:30px;margin-bottom:14px;">
       Login with Roblox
     </button>
@@ -112,24 +112,6 @@ This bot exports your Guilded server into Discord, keeping your roles, channels,
       Want to contribute? You can do it <a href="https://github.com/CryBlanka/cryblanka.github.io">here</a>!<br>
       Courtesy of <a href="https://blanka.lol">blanka.lol</a> | For inquires <a href="hello@blanka.lol">hello@blanka.lol</a>
     </p>
-  </div>
-
-  <div id="ban-container" class="container" style="text-align: left !important; max-width: 600px; width: 100%; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); display: none;">
-    <h3 style="text-align: left !important;">Account Deleted</h3>
-    <br>
-    <p style="text-align: left !important;">Our content monitors have determined that your behavior at Guilded has been in violation of our <a href="https://www.youtube.com/watch?v=0dg2Z3x2KuQ">Terms of Use</a>.</p>
-    <br>
-    <p style="text-align: left !important;">Reviewed: <b>07/15/2024 12:00AM</b> (CT)</p>
-    <br>
-    <p style="text-align: left !important;">Moderator Note: <b>Your account has been deleted for not supporting Roblox's decision.</b></p>
-    <br>
-    <p style="text-align: left !important;">Your account has been terminated.</p>
-    <br>
-    <p style="text-align: left !important;">If you wish too appeal, too bad we're unresponsive as fuck.</p>
-    <br>
-    <div style="text-align: center;">
-        <button class="gil-button" onclick="hideBanContainer()">Logout</button>
-    </div>
   </div>
 
   <script>
@@ -223,25 +205,11 @@ This bot exports your Guilded server into Discord, keeping your roles, channels,
       window.location.href = '/list';
     }
 
-    function showBanContainer() {
-        const containers = document.getElementsByClassName('container');
-        for (let i = 0; i < containers.length; i++) {
-            if (containers[i].id !== 'ban-container') {
-              containers[i].style.display = 'none';
-            }
-        }
-    document.getElementById('ban-container').style.display = 'block';
-    }
-
-    function hideBanContainer() {
-        const containers = document.getElementsByClassName('container');
-        for (let i = 0; i < containers.length; i++) {
-            if (containers[i].id !== 'ban-container') {
-              containers[i].style.display = 'block';
-            }
-        }
-    document.getElementById('ban-container').style.display = 'none';
-    }
+    function redirectToLink(url) {
+     if (url) {
+       window.location.href = url;
+     }
+   } 
 
     displayCountdown();
     window.addEventListener('load', loadSupporters);
