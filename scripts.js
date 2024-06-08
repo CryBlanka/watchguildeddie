@@ -1,4 +1,4 @@
-export function redirectToLink(url) {
+function redirectToLink(url) {
     if (url) {
         window.location.href = url;
     } else {
