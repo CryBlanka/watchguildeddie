@@ -36,7 +36,15 @@
     </div>
   </div>
 
-  <script src="scripts.js" defer></script>
+  <script>
+      function redirectToLink(url) {
+          if (url) {
+              window.location.href = url;
+          } else {
+              window.location.href = '/';
+          }
+      }
+  </script>
 
   </body>
   </html>
