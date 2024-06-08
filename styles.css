@@ -222,11 +222,6 @@ b {
 	border-radius: 10px;
 }
 
-#shutdown-grid {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: auto auto auto auto;
-}
 
 .shutdown-box {
 	background-color: #202225;
@@ -242,9 +237,21 @@ b {
 .shutdown-header {
 	display: flex;
 	justify-content: center;
-	gap: 10px;
 	align-content: center;
+	flex-direction: column;
+	padding-bottom: 10px;
 }
+
+.shutdown-header p {
+	font-size: 16px;
+}
+
+#shutdown-grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
 
 .free-scrolling-disabled {
 	overflow-x: hidden;
@@ -254,35 +261,6 @@ b {
 	overflow-x: auto;
 }
 
-@media (max-width: 1200px) {
-	#supportersDiv {
-		flex-direction: column !important;
-		height: 400px !important;
-	}
-	#shutdown-grid {
-		grid-template-columns: auto auto auto;
-	}
-}
-
-@media (max-width: 925px) {
-	#supportersDiv {
-		flex-direction: column !important;
-		height: 400px !important;
-	}
-	#shutdown-grid {
-		grid-template-columns: auto auto;
-	}
-}
-
-@media (max-width: 655px) {
-	#supportersDiv {
-		flex-direction: column !important;
-		height: 400px !important;
-	}
-	#shutdown-grid {
-		grid-template-columns: auto;
-	}
-}
 
 #scrollOptionsContainer {
 	display: flex;
