@@ -1,401 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Watch Guilded Die</title>
-    <meta property="og:title" content="Watch Guilded Die">
-    <meta property="og:description" content="We don't want Roblox to control our freedom.">
-    <meta property="og:image" content="https://watch-guilded-die.lol/favicon.png" />
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#F5C400">
-    <meta name="google-site-verification" content="AnF7xLgKyMOHyDSvhxzUbqhuinQUrH6AefoBNqthhyo" />
-    <link rel="icon" type="image/png" href="https://watch-guilded-die.lol/favicon.png">
-    <link rel="stylesheet" href="https://watch-guilded-die.lol/styles.css">
-    <meta property="og:url" content="https://example.com">
-</head>
+    <meta content="Watch Guilded Die" property="og:title">
+    <meta content="We don't want Roblox to control our freedom." property="og:description">
+    <meta content="https://watch-guilded-die.lol/favicon.png" property="og:image"/>
+    <meta content="512" property="og:image:width">
+    <meta content="512" property="og:image:height">
+    <meta content="website" property="og:type">
+    <meta content="#F5C400" name="theme-color">
+    <meta content="AnF7xLgKyMOHyDSvhxzUbqhuinQUrH6AefoBNqthhyo" name="google-site-verification"/>
+    <link href="https://watch-guilded-die.lol/favicon.png" rel="icon" type="image/png">
+    <link href="https://watch-guilded-die.lol/styles.css" rel="stylesheet">
+    <meta content="https://example.com" property="og:url">
+  </head>
 
-<body>
+  <body>
     <div class="container" id="supporters">
-        <h3>List of Servers and Projects which have been abandoned since the announcement.</h3>
-        <p>
-          You can add yourself by joining the discussion on GilCord, and adding your server in <b>#communities-or-projects-against</b>.
-        </p>
-        <br>
-        <button class="gil-button" onclick="redirectToLink('/')">Home</button>
-        <br><br>
-        <div id="shutdown-grid">
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>ReGuilded</b>
-                    <p>Made by ItzNxthaniel</p>
-                </div>
-                <p>Server | 1.6k Members</p>
-                <span class="tag killed" title="This server has been closed.">Closed</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/reguilded')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Server Guard</b>
-                    <p>Made by Reapimus</p>
-                </div>
-                <p>Server | 1.3k Members</p>
-                <span class="tag killed" title="Will be closing on Guilded's deadline along with the bot if they don't backpedal">About to close</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/server-guard')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Guilded.Java</b>
-                    <p>Made by 19Pluto19</p>
-                </div>
-                <p>Library</p>
-                <span class="tag killed" title="Development stopped, project will completely closed at deadline">About to close</span>
-                <button class="gil-button" onclick="redirectToLink()">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Guilded.Java NoCode Bot Maker</b>
-                    <p>Made by 19Pluto19</p>
-                </div>
-                <p>Development tool</p>
-                <span class="tag killed" title="Development stopped, project will completely closed at deadline">About to close</span>
-                <button class="gil-button" onclick="redirectToLink()">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Programming Space</b>
-                    <p>Made by IdkGoodName</p>
-                </div>
-                <p>Server | 4.5k Members</p>
-                <span class="tag killed" title="Will be closing soon">About to close</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/programming')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Clippsly Ltd</b>
-                    <p>Made by Clippsly</p>
-                </div>
-                <p>Server | 170 Members</p>
-                <span class="tag killed" title="Will be closing soon">About to close</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Clippsly')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Minecraft Community</b>
-                    <p>Made by RyanFol</p>
-                </div>
-                <p>Server | 9.5k Members</p>
-                <span class="tag killed" title="This server has been closed and transferred to Matrix.">Closed</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Minecraft-Community')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Parrot</b>
-                    <p>Made by magicbotman</p>
-                </div>
-                <p>Server/Bot | 1.3k Members</p>
-                <span class="tag killed" title="The bot and subscriptions closes on June 5th">About to close</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/parrot')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Astral Alliance</b>
-                    <p>Made by commander_wolf32</p>
-                </div>
-                <p>Server | 210 Members</p>
-                <span class="tag killed" title="Server closed/read-only, about to move to Matrix or Revolt">Closed</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Astral')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>WhiteAbyss | AMIRO | Minecraft</b>
-                    <p>Made by NIZUKE</p>
-                </div>
-                <p>Server | 326 Members</p>
-                <span class="tag killed" title="Server closed/read-only.">Closed</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/whiteabyss')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>GeoGuild</b>
-                    <p>Made by NotABadBud</p>
+      <h3>List of Servers and Projects which have been abandoned since the announcement.</h3>
+      <p>
+        You can add yourself by joining the discussion on GilCord, and adding your server in <b>#communities-or-projects-against</b>.
+      </p>
+      <br>
+      <button class="gil-button" onclick="redirectToLink('/')">Home</button>
+      <br><br>
+      <div id="shutdown-grid">
 
-                </div>
-                <p>Server | 136 Members</p>
-                <span class="tag killed" title="Server got deleted.">Closed</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/geo')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Infinity</b>
-                    <p>Made by Daniel Wyn Sherly</p>
-                </div>
-                <p>Server | 195 Members</p>
-                <span class="tag killed" title="Server fully archived, closed, and moved to five different platform branches Discord being the main">Closed?</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Infinity')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Mxo</b>
-                    <p>Made by Mamii</p>
-                </div>
-                <p>Server | 223 Members</p>
-                <span class="tag killed" title="Server closed.">Closed</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/mxo')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>The Epik’s</b>
-                    <p>Made by Sliverio</p>
-                </div>
-                <p>Server | 128 Members</p>
-                <span class="tag killed" title="Moved to Revolt">Closed</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Epik')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Kokoro</b>
-                    <p>Made by KAYZΔ</p>
-                </div>
-                <p>Server/bot | 282 Members</p>
-                <span class="tag killed" title="They will stay for, but the bot development is cancelled">Not closing?</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Kokoro')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>GuildedPromo</b>
-                    <p>Made by Xyphien</p>
-                </div>
-                <p>Server | 325 Members</p>
-                <span class="tag killed" title="The server along with GuildedServers.net and GuildedBots.com are closed.">Closed</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/GuildedPromo')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>EcoNuker</b>
-                    <p>Made by YumYummity</p>
-                </div>
-                <p>Server/Bot | 340 Members</p>
-                <span class="tag killed" title="Both the server and the bot will be deprecated after their Discord version is done">About to close</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/econuker')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-               <div class="shutdown-header">
-                    <b>AcousticJamm Games</b>
-                   <p>Made by AcousticJamm</p>
-                </div>
-                <p>Server | 170 Members</p>
-                <span class="tag killed" title="The server will close after Project Campground is done">About to close</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/AcousticJamm-Games')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Yoki Labs</b>
-                    <p>Made by nico</p>
-                </div>
-                <p>Server/Bot | 1.5k+ Members</p>
-                <span class="tag killed" title="Both the server and the bot will close on June 10th if the update doesn't get reverted.">About to close</span>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Yoki')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Xyphien LLC</b>
-                    <p>Made by Xyphien</p>
-                </div>
-                <span class="tag killed" title="Moved to Discord">Closed</span>
-                <p>Server | 714 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/XyphienLLC')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Trading Card Games</b>
-                    <p>Made by Xyphien</p>
-                </div>
-                <span class="tag killed" title="Moved to Discord">Closed</span>
-                <p>Server | 697 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/TCG')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Knights of Ember</b>
-                    <p>Made by Xyphien</p>
-                </div>
-                <span class="tag killed" title="Moved to Discord">Closed</span>
-                <p>Server | 146 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/KoE')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Valorant</b>
-                    <p>Made by Xyphien</p>
-                </div>
-                <span class="tag killed" title="No longer worked on">Closed</span>
-                <p>Server | 686 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/ValorantG')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Artist House</b>
-                    <p>Made by Xyphien</p>
-                </div>
-                <span class="tag killed" title="No longer worked on">Closed</span>
-                <p>Server | 198 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Artist')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>League of Legends</b>
-                    <p>Made by yamato</p>
-                </div>
-                <span class="tag killed" title="No longer worked on">Closed</span>
-                <p>Server | 350 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Legends')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Guildedservers.net</b>
-                    <p>Made by Xyphien</p>
-                </div>
-                <span class="tag killed" title="Shut down">Closed</span>
-                <p>Website</p>
-                <button class="gil-button" onclick="redirectToLink('https://Guildedservers.net')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Guildedbot.com</b>
-                    <p>Made by Xyphien</p>
-                </div>
-                <span class="tag killed" title="Shut down">Closed</span>
-                <p>Website</p>
-                <button class="gil-button" onclick="redirectToLink('https://Guildedbot.com')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>The MetaverseRPN</b>
-                    <p>Made by Sandra</p>
-                </div>
-                <span class="tag killed" title="Shutting down on July 15th">About to close</span>
-                <p>Server | 142 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/The-Metaverse-RPN')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>ADSCRAFT Season X</b>
-                    <p>Made by Quizzity</p>
-                </div>
-                <span class="tag killed" title="Will close down on July if the update doesnt get reverted">About to close</span>
-                <p>Server | 151 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/ADSCRAFT')">Server link</button>
-            </div>
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Rosehaven</b>
-                    <p>Made by Sandra</p>
-                </div>
-                <span class="tag killed" title="Shutting down on July 15th">About to close</span>
-                <p>Server | 252 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Rosehaven')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>RPGBot</b>
-                    <p>Made by Sandra</p>
-                </div>
-                <span class="tag killed" title="Shutting down on July 15th">About to close</span>
-                <p>Server/Bot | 227 Members (Bot used by almost 2k servers)</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/RPGBot')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>The Furrest</b>
-                    <p>Made by Zunkz</p>
-                </div>
-                <span class="tag killed" title="Closes on the 15th">About to close</span>
-                <p>Server | 438 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Furry')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Project Sekai Guilded</b>
-                    <p>Made by NotEvilbook</p>
-                </div>
-                <span class="tag killed" title="Permanent Closure, Moved to Discord">Closed</span>
-                <p>Server | 109 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/ProjectSekai')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Mesozoic Haven</b>
-                    <p>Made by KensonPlays</p>
-                </div>
-                <span class="tag killed" title="unofficially closed down now, will automatically become inactive/unused when my account deletes">Closed</span>
-                <p>Server | 101 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/mesozoichaven')">Server link</button>
-            </div>
-
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Guildipy</b>
-                    <p>Made by Blanka</p>
-                </div>
-                <span class="tag killed" title="Project has been archived and isn't subject to further development.">Closed</span>
-                <p>Custom integration</p>
-                <button class="gil-button" onclick="redirectToLink('https://github.com/CryBlanka/guildipy')">Server link</button>
-            </div>
-
-            <div class="shutdown-box">
-                <div class="shutdown-header">
-                    <b>Infinity Community</b>
-                    <p>Made by EliteNia</p>
-                </div>
-                <span class="tag killed" title="Server fully archived, closed, and moved to five different platform branches Discord being the main">Closed</span>
-                <p>Server | 195 Members</p>
-                <button class="gil-button" onclick="redirectToLink('https://www.guilded.gg/Infinity')">Server link</button>
-            </div>
-<!--        Owner is not sure at all (said that they'd keep it open even if they switched to Discord)-->
-<!--        <div class="shutdown-box">-->
-<!--            <div class="shutdown-header">-->
-<!--                <b>Anime Island</b>-->
-<!--                <p>Made by Waves</p>-->
-<!--            </div>-->
-<!--            <p>Server | 15.2k Members</p>-->
-<!--            <span class="tag killed" title="Will be permanently closed if changes are not reverted.">Closed (temporarily)</span>-->
-<!--            <button class="gil-button" onclick="Link('https://www.guilded.gg/Anime')">Server link</button>-->
-<!--        </div>-->
-        </div>
+      </div>
     </div>
 
 
-      <div class="container" id="ownership">
-        <p>
-          This site has been made with love by <b>YumYummity in Canada</b> and <b>Blanka in Poland</b> 💜<br>
-          Want to contribute? You can do it <a  href="https://github.com/CryBlanka/cryblanka.github.io">here</a>!<br>
-          Courtesy of <a href="https://blanka.lol">blanka.lol</a>
-        </p>
-      </div>
-
+    <div class="container" id="ownership">
+      <p>
+        This site has been made with love by <b>YumYummity in Canada</b> and <b>Blanka in Poland</b> 💜<br>
+        Want to contribute? You can do it <a href="https://github.com/CryBlanka/cryblanka.github.io">here</a>!<br>
+        Courtesy of <a href="https://blanka.lol">blanka.lol</a>
+      </p>
+    </div>
 
     <script>
-        function redirectToLink(url) {
-            if (url) {
-                window.location.href = url;
-            } else {
-                window.location.href = '/';
-            }
-        }
+      function loadContent() {
+        const shutdownGrid = document.getElementById("shutdown-grid");
+
+        fetch('https://watch-guilded-die.lol//serversOrProjects.json')
+          .then(response => response.json())
+          .then(data => {
+            data.forEach(dataObject => {
+              const shutdownBox = document.createElement("shutdownBox");
+              shutdownBox.classList.add("shutdown-box");
+
+              // Header
+              const shutdownHeader = document.createElement("div");
+              shutdownHeader.classList.add("shutdown-header");
+              // Server or Project Name
+              const name = document.createElement("b");
+              name.innerText = dataObject.name;
+              // Creator Name
+              const creator = document.createElement("p");
+              creator.innerText = `Made by ${dataObject.creator}`
+              shutdownHeader.appendChild(name);
+              shutdownHeader.appendChild(creator);
+              shutdownBox.appendChild(shutdownHeader);
+
+              // Type
+              const typeAndUsage = document.createElement("p");
+              typeAndUsage.innerText = `${dataObject.type}${dataObject.usageCount !== "" ? " | " + dataObject.usageCount : ""}`
+              shutdownBox.appendChild(typeAndUsage);
+
+              // Status
+              const status = document.createElement("span");
+              status.classList.add("tag", "hidden");
+              status.title = dataObject.statusTooltip;
+              status.innerText = dataObject.status;
+              shutdownBox.appendChild(status);
+
+              // Button
+              if (dataObject.link !== "") {
+                const button = document.createElement("button");
+                button.classList.add("gil-button");
+                button.addEventListener("click", () => redirectToLink(dataObject.link))
+                if (dataObject.link.startsWith("https://www.guilded.gg/")) {
+                  button.innerText = "View Server"
+                } else if (dataObject.link.startsWith("https://github.com/")) {
+                  button.innerText = "View GitHub"
+                } else {
+                  button.innerText = "Open External Website"
+                }
+                shutdownBox.appendChild(button)
+              }
+
+              shutdownGrid.appendChild(shutdownBox);
+            })
+          })
+      }
+
+      window.addEventListener('load', loadContent);
     </script>
-</body>
+
+    <script src="https://watch-guilded-die.lol/globalScript.js"></script>
+  </body>
 </html>

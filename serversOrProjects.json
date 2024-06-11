@@ -1,0 +1,335 @@
+[
+  {
+    "name": "ReGuilded",
+    "creator": "ItzNxthaniel",
+    "type": "Client Mod & Server",
+    "usageCount": "~1.6k Members",
+    "status": "Closed",
+    "statusTooltip": "This server has been closed.",
+    "link": "https://www.guilded.gg/reguilded"
+  },
+  {
+    "name": "Server Guard",
+    "creator": "Reapimus",
+    "type": "Bot & Server",
+    "usageCount": "5.3k Servers • 1.3k Members",
+    "status": "Closed",
+    "statusTooltip": "Will be closing on Guilded's deadline along with the bot if they don't backpedal",
+    "link": "https://www.guilded.gg/server-guard"
+  },
+  {
+    "name": "Guilded.Java",
+    "creator": "19Pluto19",
+    "type": "Library",
+    "usageCount": "",
+    "status": "Closing is Planned",
+    "statusTooltip": "Development stopped, project will completely closed at deadline",
+    "link": ""
+  },
+  {
+    "name": "Guilded.Java NoCode Bot Maker",
+    "creator": "19Pluto19",
+    "type": "Development tool",
+    "usageCount": "",
+    "status": "Closing is Planned",
+    "statusTooltip": "Development stopped, project will completely closed at deadline",
+    "link": ""
+  },
+  {
+    "name": "Programming Space",
+    "creator": "IdkGoodName",
+    "type": "Server",
+    "usageCount": "~4.5k Members",
+    "status": "Closed",
+    "statusTooltip": "Server is now in an archived state.",
+    "link": "https://www.guilded.gg/programming"
+  },
+  {
+    "name": "Clippsly Ltd",
+    "creator": "Clippsly",
+    "type": "Server",
+    "usageCount": "170 Members",
+    "status": "Closed",
+    "statusTooltip": "Server is now in an archived state.",
+    "link": "https://www.guilded.gg/Clippsly"
+  },
+  {
+    "name": "Minecraft Community",
+    "creator": "RyanFol",
+    "type": "Server",
+    "usageCount": "~9.5k Members",
+    "status": "Closed",
+    "statusTooltip": "Server has closed and transferred to Matrix.",
+    "link": "https://www.guilded.gg/Minecraft-Community"
+  },
+  {
+    "name": "Parrot",
+    "creator": "magicbotman",
+    "type": "Bot & Server",
+    "usageCount": "??? SERVERS • 1.3k Members",
+    "status": "Closing is Planned",
+    "statusTooltip": "Bot is shutting down on June 17th.",
+    "link": "https://www.guilded.gg/parrot"
+  },
+  {
+    "name": "Astral Alliance",
+    "creator": "commander_wolf32",
+    "type": "Server",
+    "usageCount": "210 Members",
+    "status": "Closed",
+    "statusTooltip": "Server is now in an archived state, about to move to Matrix or Revolt.",
+    "link": "https://www.guilded.gg/Astral"
+  },
+  {
+    "name": "WhiteAbyss | AMIRO | Minecraft",
+    "creator": "NIZUKE",
+    "type": "Server",
+    "usageCount": "326 Members",
+    "status": "Closed",
+    "statusTooltip": "Server is now in an archived state.",
+    "link": "https://www.guilded.gg/whiteabyss"
+  },
+  {
+    "name": "GeoGuild",
+    "creator": "NotABadBud",
+    "type": "Server",
+    "usageCount": "136 Members",
+    "status": "Closed",
+    "statusTooltip": "Server got deleted.",
+    "link": "https://www.guilded.gg/geo"
+  },
+  {
+    "name": "Infinity",
+    "creator": "Daniel Wyn Sherly",
+    "type": "Server",
+    "usageCount": "195 Members",
+    "status": "Closed?",
+    "statusTooltip": "Server fully archived, closed, and moved to five different platform branches Discord being the main",
+    "link": "https://www.guilded.gg/Infinity"
+  },
+  {
+    "name": "Mxo",
+    "creator": "Mamii",
+    "type": "Server",
+    "usageCount": "223 Members",
+    "status": "Closed",
+    "statusTooltip": "Server closed.",
+    "link": "https://www.guilded.gg/mxo"
+  },
+  {
+    "name": "The Epik’s",
+    "creator": "Sliverio",
+    "type": "Server",
+    "usageCount": "128 Members",
+    "status": "Closed",
+    "statusTooltip": "Moved to Revolt",
+    "link": "https://www.guilded.gg/Epik"
+  },
+  {
+    "name": "Kokoro",
+    "creator": "KAYZΔ",
+    "type": "Bot & Server",
+    "usageCount": "284 Members",
+    "status": "Bot Project cancelled",
+    "statusTooltip": "Community staying, bot is shutting down.",
+    "link": "https://www.guilded.gg/Kokoro"
+  },
+  {
+    "name": "GuildedPromo",
+    "creator": "Xyphien",
+    "type": "Server & Website",
+    "usageCount": "325 Members",
+    "status": "Closed",
+    "statusTooltip": "The server along with GuildedServers.net and GuildedBots.com are closed.",
+    "link": "https://www.guilded.gg/GuildedPromo"
+  },
+  {
+    "name": "EcoNuker",
+    "creator": "YumYummity",
+    "type": "Bot & Server",
+    "usageCount": "~1.8k Servers • 340 Members",
+    "status": "Closing is Planned",
+    "statusTooltip": "Both the server and the bot will be deprecated after their Discord version is done",
+    "link": "https://www.guilded.gg/econuker"
+  },
+  {
+    "name": "AcousticJamm Games",
+    "creator": "AcousticJamm",
+    "type": "Server",
+    "usageCount": "170 Members",
+    "status": "Closing is Planned.",
+    "statusTooltip": "The server will close after Project Campground is done",
+    "link": "https://www.guilded.gg/AcousticJamm-Games"
+  },
+  {
+    "name": "Yoki Labs",
+    "creator": "nico",
+    "type": "Bot & Server",
+    "usageCount": "~5k Servers • ~1.5k Members",
+    "status": "Closed",
+    "statusTooltip": "The bot is now shutdown and the server is closed.",
+    "link": "https://www.guilded.gg/Yoki"
+  },
+  {
+    "name": "Xyphien LLC",
+    "creator": "Xyphien",
+    "type": "Server",
+    "usageCount": "714 Members",
+    "status": "Closed",
+    "statusTooltip": "Moved to Discord",
+    "link": "https://www.guilded.gg/XyphienLLC"
+  },
+  {
+    "name": "Trading Card Games",
+    "creator": "Xyphien",
+    "type": "Server",
+    "usageCount": "697 Members",
+    "status": "Closed",
+    "statusTooltip": "Moved to Discord",
+    "link": "https://www.guilded.gg/TCG"
+  },
+  {
+    "name": "Knights of Ember",
+    "creator": "Xyphien",
+    "type": "Server",
+    "usageCount": "146 Members",
+    "status": "Closed",
+    "statusTooltip": "Moved to Discord",
+    "link": "https://www.guilded.gg/KoE"
+  },
+  {
+    "name": "Valorant",
+    "creator": "Xyphien",
+    "type": "Server",
+    "usageCount": "686 Members",
+    "status": "Closed",
+    "statusTooltip": "No longer worked on",
+    "link": "https://www.guilded.gg/ValorantG"
+  },
+  {
+    "name": "Artist House",
+    "creator": "Xyphien",
+    "type": "Server",
+    "usageCount": "198 Members",
+    "status": "Closed",
+    "statusTooltip": "No longer worked on",
+    "link": "https://www.guilded.gg/Artist"
+  },
+  {
+    "name": "League of Legends",
+    "creator": "Xyphien",
+    "type": "Server",
+    "usageCount": "350 Members",
+    "status": "Closed",
+    "statusTooltip": "No longer worked on",
+    "link": "https://www.guilded.gg/Legends"
+  },
+  {
+    "name": "Guildedservers.net",
+    "creator": "Xyphien",
+    "type": "Website",
+    "usageCount": "",
+    "status": "Closed",
+    "statusTooltip": "Shut down",
+    "link": "https://Guildedservers.net"
+  },
+  {
+    "name": "Guildedbot.com",
+    "creator": "Xyphien",
+    "type": "Website",
+    "usageCount": "",
+    "status": "Closed",
+    "statusTooltip": "Shut down",
+    "link": "https://Guildedbot.com"
+  },
+  {
+    "name": "The MetaverseRPN",
+    "creator": "Sandra",
+    "type": "Server",
+    "usageCount": "142 Members",
+    "status": "Closing is Planned",
+    "statusTooltip": "Shutting down on July 15th.",
+    "link": "https://www.guilded.gg/The-Metaverse-RPN"
+  },
+  {
+    "name": "ADSCRAFT Season X",
+    "creator": "Quizzity",
+    "type": "Server",
+    "usageCount": "151 Members",
+    "status": "Closing is Planned",
+    "statusTooltip": "Will close down on July if the update doesnt get reverted.",
+    "link": "https://www.guilded.gg/ADSCRAFT"
+  },
+  {
+    "name": "Rosehaven",
+    "creator": "Sandra",
+    "type": "Server",
+    "usageCount": "252 Members",
+    "status": "Closing is Planned",
+    "statusTooltip": "Shutting down on July 15th",
+    "link": "https://www.guilded.gg/Rosehaven"
+  },
+  {
+    "name": "RPGBot",
+    "creator": "Sandra",
+    "type": "Bot & Server",
+    "usageCount": "~2k Servers • 227 Members",
+    "status": "Closing is Planned",
+    "statusTooltip": "Shutting down on July 15th",
+    "link": "https://www.guilded.gg/RPGBot"
+  },
+  {
+    "name": "The Furrest",
+    "creator": "Zunkz",
+    "type": "Server",
+    "usageCount": "438 Members",
+    "status": "Closing is Planned",
+    "statusTooltip": "Closes on the 15th",
+    "link": "https://www.guilded.gg/Furry"
+  },
+  {
+    "name": "Project Sekai Guilded",
+    "creator": "NotEvilbook",
+    "type": "Server",
+    "usageCount": "109 Members",
+    "status": "Closed",
+    "statusTooltip": "Permanent Closure, Moved to Discord",
+    "link": "https://www.guilded.gg/ProjectSekai"
+  },
+  {
+    "name": "Mesozoic Haven",
+    "creator": "KensonPlays",
+    "type": "Server",
+    "usageCount": "101 Members",
+    "status": "Closed",
+    "statusTooltip": "unofficially closed down now, will automatically become inactive/unused when my account deletes",
+    "link": "https://www.guilded.gg/mesozoichaven"
+  },
+  {
+    "name": "Guildipy",
+    "creator": "Blanka",
+    "type": "Custom Integration",
+    "usageCount": "",
+    "status": "Closed",
+    "statusTooltip": "Project has been archived and isn't subject to further development.",
+    "link": "https://github.com/CryBlanka/guildipy"
+  },
+  {
+    "name": "Infinity Community",
+    "creator": "EliteNia",
+    "type": "Server",
+    "usageCount": "195 Members",
+    "status": "Closed",
+    "statusTooltip": "Server fully archived, closed, and moved to five different platform branches Discord being the main",
+    "link": "https://www.guilded.gg/Infinity"
+  },
+  {
+    "name": "12e Gaming Community",
+    "creator": "Phillipius",
+    "type": "Server",
+    "usageCount": "163 Members",
+    "status": "Closing is Planned",
+    "statusTooltip": "Server is shutting down on July 15th, migration to Discord in progress.",
+    "link": "https://guilded.gg/12eGC"
+  }
+]
