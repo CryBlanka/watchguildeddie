@@ -42,6 +42,7 @@
           <div class="label">MILLISECONDS</div>
         </div>
       </div>
+      <div id="message" style="display: none; font-size: 2em; color: red;">It's dead, the countdown is over...</div>
     </div>
 
     <div class="container" id="summary">
@@ -166,13 +167,17 @@
               document.getElementById('minutes').textContent = countdown.minutes;
               document.getElementById('seconds').textContent = countdown.seconds;
               document.getElementById('milliseconds').textContent = countdown.milliseconds;
+
+              if (countdown.total <= 0) {
+                  document.getElementById('countdown').style.display = 'none';
+                  document.getElementById('message').style.display = 'block';
+                  clearInterval(interval);
+              }
           }
       
           updateCountdown();
-          setInterval(updateCountdown, 1);
+          let interval = setInterval(updateCountdown, 1);
       }
-
-      displayCountdown();
 
       function loadSupporters() {
         fetch('https://watch-guilded-die.lol/people/ranks.json')
